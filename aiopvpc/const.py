@@ -15,10 +15,14 @@ DATE_CHANGE_TO_20TD = date(2021, 6, 1)
 # Tariffs as internal keys in esios API data
 TARIFF_20TD_IDS = ["PCB", "CYM"]
 
+# GAS price internal keys in esios API data
+TARIFF_20TD_GAS = ["EDCGASPCB","EDCGASCYM"]
+
 # Tariff names used in HomeAssistant integration
 TARIFFS = ["2.0TD", "2.0TD (Ceuta/Melilla)"]
 
 TARIFF2ID = dict(zip(TARIFFS, TARIFF_20TD_IDS))
+TARIFF2GAS = dict(zip(TARIFFS, TARIFF_20TD_GAS))
 
 # Contracted power
 DEFAULT_POWER_KW = 3.3
