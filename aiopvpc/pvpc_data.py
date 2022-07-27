@@ -76,7 +76,7 @@ class PVPCData:
         power: float = DEFAULT_POWER_KW,
         power_valley: float = DEFAULT_POWER_KW,
         timeout: float = DEFAULT_TIMEOUT,
-        data_source: DataSource = "apidatos",  # "esios_public",
+        data_source: DataSource = "esios_public",
     ):
         self.source_available = True
         self.state: Optional[float] = None
